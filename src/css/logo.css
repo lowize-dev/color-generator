@@ -1,0 +1,78 @@
+
+.theme-mode {
+  --primary: #303234;
+  --secondary: rgba(255,255,255,0.3);
+}
+
+.theme-loader * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.theme-mode {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.theme-loader {
+  width: 103px;
+  height: 90px;
+  position: relative;
+}
+
+.theme-loader div {
+  width: 50px;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-top: 21px solid var(--primary);
+  position: absolute;
+  -webkit-filter: drop-shadow(0 0 var(--shadow-blur) var(--secondary));
+  filter: drop-shadow(0 0 var(--shadow-blur) var(--secondary));
+  transition: 200ms ease;
+}
+
+.theme-loader div:nth-child(1) {
+  top: 21px;
+  left: 14px;
+  rotate: 60deg;
+}
+
+.theme-loader div:nth-child(2) {
+  bottom: 5px;
+  left: -8px;
+  rotate: 300deg;
+}
+
+.theme-loader div:nth-child(3) {
+  bottom: 7px;
+  right: -11px;
+  rotate: 180deg;
+}
+
+.theme-loader:hover div:nth-child(1) {
+  top: 27px;
+  left: 7px;
+  rotate: -60deg;
+}
+
+.theme-loader:hover div:nth-child(2) {
+  bottom: 2px;
+  left: 0;
+  rotate: 180deg;
+}
+
+.theme-loader:hover div:nth-child(3) {
+  bottom: 16px;
+  right: -9px;
+  rotate: 60deg;
+}
