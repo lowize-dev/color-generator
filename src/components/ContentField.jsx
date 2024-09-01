@@ -71,7 +71,7 @@ const ContentField = ({
 			</ul>
 			<button
 				className="
-					p-3 bg-green-400 w-1/5 rounded-full bg-[#303234] text-[#efefef]
+					p-3 bg-green-400 px-[40px] tablet:px-[90px] rounded-full bg-[#303234] text-[#efefef]
 					dark:bg-[#efefef] dark:text-[#303234] active:scale-[0.93]
 					duration-200 ease-linear mt-10 mb-7
 				"

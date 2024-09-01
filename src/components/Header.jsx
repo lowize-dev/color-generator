@@ -19,7 +19,10 @@ const Header = ({
 				"
 			>
 				<a href="https://github.com/lowize-dev" target="_blank"><Logo/></a>
-				<div className="input-container md:w-1/3 tablet:w-1/2">
+				<div className="
+					input-container md:w-1/3 tablet:w-1/2
+					dark:not-focus-within:shadow-[0_14px_55px_0_rgba(239,239,239,0.6)]
+					not-focus-within:shadow-[0_14px_55px_0_rgba(48,50,52,0.6)]">
 				    <input
 				    	value={value}
 				    	onChange={(e) => {
@@ -40,7 +43,11 @@ const Header = ({
 					type="checkbox"
 					checked={theme === "dark"}
 					onChange={toggleTheme}
-					className="theme-checkbox dark:border-[#efefef]"
+					className="
+						theme-checkbox dark:border-[#efefef]
+						dark:shadow-[0_14px_55px_0_rgba(239,239,239,0.6)]
+						shadow-[0_14px_55px_0_rgba(48,50,52,0.6)]
+					"
 				/>
 			</nav>
 			<section

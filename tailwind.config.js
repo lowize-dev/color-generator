@@ -15,5 +15,9 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addVariant }) {
+      addVariant("not-focus-within", "&:not(:focus-within)");
+    },
+  ],
 }
